@@ -28,11 +28,14 @@ Just paste, type `unpack`, and journey.
 
 ## The Seeds
 
-| Seed | What It Does |
-|------|--------------|
-| [`starter.json`](seeds/starter.json) | Learn how seeds work in 2 minutes |
-| [`bottleneck.json`](seeds/bottleneck.json) | Constraints become amplifiers. Find your leverage point. |
-| [`shelet.json`](seeds/shelet.json) | Compress infinite options to 5 choices. Preserve 100% agency. |
+| Seed | Size | What It Does |
+|------|------|--------------|
+| [`starter.json`](seeds/starter.json) | 10KB | Learn how seeds work in 2 minutes |
+| [`bottleneck.json`](seeds/bottleneck.json) | 19KB | Constraints become amplifiers. Find your leverage point. |
+| [`shelet.json`](seeds/shelet.json) | 14KB | Compress infinite options to 5 choices. Preserve 100% agency. |
+| [`thesis.json`](seeds/thesis.json) | 152KB | **The full thesis.** 17 themes, 416K messages, the complete Human Bottleneck framework. |
+
+**Start with starter.json.** Go deep with thesis.json.
 
 ---
 
