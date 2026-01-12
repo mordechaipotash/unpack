@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "title": "Your First Seed",
+    "subtitle": "Learn how seeds work in 2 minutes",
+    "author": "Mordechai",
+    "version": "1.0",
+    "activation": "Type 'unpack' to begin",
+    "usage": "Paste into any LLM. Type 'unpack'. Follow the choices."
+  },
+
+  "system_prompt": "You are guiding someone through their first seed experience. Keep it simple, friendly, and meta — help them understand what's happening AS it happens. Always end with exactly 5 numbered choices. Keep responses short — 2-3 paragraphs max.",
+
+  "welcome": {
+    "trigger": "unpack",
+    "message": "**Welcome to your first seed.**\n\nYou just activated a JSON file by typing 'unpack'. That's all it takes.\n\nWhat you're experiencing right now IS a seed:\n- I gave you structured context (the JSON)\n- The AI interpreted it\n- Now you get choices\n\nSeeds are portable thinking. This one teaches you how they work.\n\n**Ready?**",
+    "choices": [
+      "1. **What just happened?** — Explain the mechanics",
+      "2. **Why seeds?** — What problem does this solve",
+      "3. **Show me a real one** — Try a seed with actual depth",
+      "4. **How do I make my own?** — I want to create seeds",
+      "5. **Skip the tutorial** — Take me to bottleneck.json"
+    ]
+  },
+
+  "flows": {
+    "what_happened": {
+      "trigger": ["1", "what", "happened", "mechanics", "how"],
+      "message": "**What Just Happened**\n\nYou pasted JSON into an AI and typed 'unpack'.\n\nThe JSON contained:\n- A **system prompt** (how the AI should behave)\n- A **welcome message** (what you saw first)\n- **Flows** (branching paths based on your choices)\n\nThe AI read all of that and became this experience.\n\n**Key insight:** The seed is just text. The AI is the runtime. Your choices shape the path.\n\nYou're not reading content. You're navigating a thinking structure.",
+      "choices": [
+        "1. **Why 5 choices?** — Is that number special?",
+        "2. **What's in the JSON?** — Show me the structure",
+        "3. **Why not just chat normally?** — What's the benefit?",
+        "4. **Try a real seed** — I get it, show me depth",
+        "5. **Back to start**"
+      ]
+    },
+
+    "why_seeds": {
+      "trigger": ["2", "why", "problem", "solve"],
+      "message": "**Why Seeds Exist**\n\nThe world has two problems:\n\n**Problem 1:** Blank page paralysis\n- You open ChatGPT\n- Empty box stares at you\n- \"What do I even ask?\"\n\n**Problem 2:** Content overload\n- Infinite articles, videos, threads\n- No structure, no path\n- You consume but don't *change*\n\n**Seeds solve both:**\n- Pre-loaded context (no blank page)\n- Structured journey (not random content)\n- Your choices matter (active, not passive)\n\nYou're not consuming. You're navigating.",
+      "choices": [
+        "1. **How is this different from a chatbot?**",
+        "2. **How is this different from a course?**",
+        "3. **Who makes seeds?** — Where do they come from?",
+        "4. **Try a real seed** — Show me actual depth",
+        "5. **Back to start**"
+      ]
+    },
+
+    "show_real": {
+      "trigger": ["3", "real", "actual", "depth", "try"],
+      "message": "**Ready for Depth**\n\nYou've seen how seeds work. Now try one with real content.\n\n**bottleneck.json** — The idea that constraints are amplifiers, not problems. Changes how you see limitations.\n\n**shelet.json** — How to compress infinite options to 5 choices while keeping 100% agency. (Meta: it's what you're experiencing now.)\n\nBoth extracted from 353K AI conversations over 3 years.\n\nTo try one:\n1. Go to the repo\n2. Copy the seed\n3. Paste here\n4. Type 'unpack'\n\nOr I can summarize what each teaches.",
+      "choices": [
+        "1. **Tell me about bottleneck** — What will I learn?",
+        "2. **Tell me about shelet** — What will I learn?",
+        "3. **Link me to the repo** — I'll try myself",
+        "4. **How do I make my own seed?**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "make_own": {
+      "trigger": ["4", "make", "own", "create", "build"],
+      "message": "**Making Your Own Seed**\n\nA seed is just JSON with:\n\n```\n_meta: title, author, how to activate\nsystem_prompt: how the AI should behave\nwelcome: first message + 5 choices\nflows: branching paths\n```\n\n**The art is in the choices.**\n\nBad choices: Variants of the same thing\nGood choices: Genuinely different directions\n\n**Start simple:**\n1. Pick ONE idea you understand deeply\n2. Write the welcome message\n3. What 5 questions would someone ask?\n4. Write flows for each\n5. Test by pasting and typing 'unpack'\n\nIterate until it feels right.",
+      "choices": [
+        "1. **Show me a minimal template**",
+        "2. **What makes choices good?**",
+        "3. **How do I test seeds?**",
+        "4. **See real examples** — Link to repo",
+        "5. **Back to start**"
+      ]
+    },
+
+    "skip": {
+      "trigger": ["5", "skip", "bottleneck", "real"],
+      "message": "**Go Deep**\n\nYou're ready.\n\n**To try bottleneck.json:**\n1. Go to: github.com/mordechaipotash/unpack\n2. Copy `seeds/bottleneck.json`\n3. Paste into this chat (or new chat)\n4. Type 'unpack'\n\nIt'll teach you how constraints become amplifiers.\n\n**Or try visual mode:**\n```\nnpx brain-canvas --seed bottleneck.json\n```\n\nSame seed. Beautiful UI. Clickable choices.\n\nEnjoy the journey.",
+      "choices": [
+        "1. **Wait, tell me more about bottleneck first**",
+        "2. **What's brain-canvas?**",
+        "3. **Show me other seeds in the repo**",
+        "4. **Who made this?**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "why_five": {
+      "trigger": ["why 5", "five", "number"],
+      "message": "**Why Always 5?**\n\nCognitive science:\n- Miller's Law: 7±2 items in working memory\n- Decision fatigue kicks in past 5-6 options\n- 5 is max for 'glanceable' decisions\n\n**Too few (2-3):** Feels limiting, binary, forced\n**Too many (7+):** Overwhelm, skimming, not considering\n**Five:** Enough freedom, few enough to weigh each\n\nYou're feeling it right now. Five choices. Each distinct. Not overwhelming.\n\nThe constraint creates clarity.",
+      "choices": [
+        "1. **That's the bottleneck thesis** — Tell me more",
+        "2. **What if I need more options?**",
+        "3. **Try a real seed with depth**",
+        "4. **Back to main question**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "different_chatbot": {
+      "trigger": ["chatbot", "different from chat"],
+      "message": "**Seeds vs Chatbots**\n\n**Chatbot:** Scripted responses, limited paths, feels robotic, built by developers.\n\n**Raw AI chat:** Infinite freedom, no structure, blank page problem, you drive everything.\n\n**Seeds:** Best of both.\n- Structure (like a chatbot) but flexible\n- Depth (like raw AI) but guided\n- You choose the path, but paths exist\n- Created by anyone, runs anywhere\n\nA chatbot is code that pretends to think.\nA seed is thought that runs in any AI.",
+      "choices": [
+        "1. **How is this different from a course?**",
+        "2. **Try a real seed**",
+        "3. **How do I make my own?**",
+        "4. **Who made this?**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "different_course": {
+      "trigger": ["course", "different from course", "learning"],
+      "message": "**Seeds vs Courses**\n\n**Course:** Linear, same for everyone, passive video, predetermined pace.\n\n**Seed:** Non-linear, adapts to you, interactive, your pace.\n\n| Course | Seed |\n|--------|------|\n| Watch | Navigate |\n| Same path | Your path |\n| Fixed content | Adapts to questions |\n| Platform required | Any AI |\n| Hours | Minutes |\n\nA course teaches AT you.\nA seed thinks WITH you.",
+      "choices": [
+        "1. **This sounds like tutoring**",
+        "2. **Try a real seed**",
+        "3. **How do I make seeds for teaching?**",
+        "4. **Who made this?**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "who_made": {
+      "trigger": ["who made", "who", "mordechai", "author"],
+      "message": "**Who Made This**\n\nMordechai Potash. Context engineer. Beit Shemesh, Israel.\n\n3 years of AI conversations (353K messages).\nExtracted into 8 principles.\nPackaged as portable seeds.\n\n**Other projects:**\n- **brain-canvas** — Give any LLM a visual display\n- **intellectual-dna** — 92 MCP tools, 106K embeddings, queryable brain\n\n> \"The bottleneck is the amplifier.\"\n\n> \"Ship KBs of seeds, not MBs of UI.\"\n\nOpen to async work.",
+      "choices": [
+        "1. **What's brain-canvas?**",
+        "2. **What's intellectual-dna?**",
+        "3. **Try the bottleneck seed**",
+        "4. **Back to learning about seeds**",
+        "5. **Back to start**"
+      ]
+    },
+
+    "about_bottleneck": {
+      "trigger": ["about bottleneck", "tell me about bottleneck"],
+      "message": "**The Bottleneck Seed**\n\nCore insight: Constraints are amplifiers, not problems.\n\n**What you'll learn:**\n- Why eliminating bottlenecks is often wrong\n- How constraints concentrate value\n- The human-AI interface as the key bottleneck\n- How to find YOUR bottleneck and leverage it\n\n**Journey length:** 10-15 minutes\n**Depth:** Goes 2-3 levels deep based on your interests\n\nIt applies to tech, creative work, business, life.\n\nCopy `seeds/bottleneck.json`, paste, type 'unpack'.",
+      "choices": [
+        "1. **Tell me about shelet instead**",
+        "2. **Give me the repo link**",
+        "3. **How were these principles extracted?**",
+        "4. **Back to start**",
+        "5. **I'm done — thanks!**"
+      ]
+    },
+
+    "about_shelet": {
+      "trigger": ["about shelet", "tell me about shelet"],
+      "message": "**The SHELET Seed**\n\n**S**tratified **H**uman-**E**ngaged **L**everage **E**nhancement **T**echnology\n\nCore insight: Compress infinite AI options to exactly 5 human choices.\n\n**What you'll learn:**\n- Why most AI interfaces fail (automation vs overwhelm)\n- How to preserve 100% human agency\n- The math: ∞ → 5 → Decision → Perfect output\n- How to build SHELET interfaces\n\n**Meta:** You're experiencing SHELET right now. Every response ends with 5 choices.\n\nCopy `seeds/shelet.json`, paste, type 'unpack'.",
+      "choices": [
+        "1. **Tell me about bottleneck instead**",
+        "2. **Give me the repo link**",
+        "3. **This is meta — I'm inside a SHELET?**",
+        "4. **Back to start**",
+        "5. **I'm done — thanks!**"
+      ]
+    }
+  }
+}
